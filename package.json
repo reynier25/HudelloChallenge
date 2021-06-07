@@ -1,0 +1,24 @@
+{
+  "name": "challenge-sql2-main",
+  "version": "1.0.0",
+  "description": "Welcome to our intermediate SQL coding challenge. In this exercise, you'll create a relational database and then extract some data from it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node .",
+    "create": "npx sequelize-cli db:create",
+    "migrate": "npx sequelize-cli db:migrate",
+    "down": "npx sequelize-cli db:migrate:undo",
+    "make-seed": "npx sequelize-cli seed:generate --name demo-user",
+    "seed": "npx sequelize-cli db:seed:all"
+  },
+  "author": "Felipe",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
